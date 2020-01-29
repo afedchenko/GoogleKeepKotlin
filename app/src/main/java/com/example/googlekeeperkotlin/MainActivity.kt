@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         })
 
         liveData.observe(this, Observer{
-            tv_hello.text = it + " Hello"
+            tv_hello.text = it + "текст"
         })
 
         btn.setOnClickListener {

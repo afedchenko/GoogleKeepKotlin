@@ -8,12 +8,12 @@ class MainViewModel: ViewModel() {
     private val viewStateLiveData: MutableLiveData<String> = MutableLiveData()
 
     init {
-        viewStateLiveData.value = "Hello World!!!"
+        viewStateLiveData.value = "Это старый "
     }
 
     fun viewState() : LiveData<String> = viewStateLiveData
 
     fun updateHello() {
-        viewStateLiveData.value = "Hello World2!!!"
+        viewStateLiveData.value = "А это новый "
     }
 }
