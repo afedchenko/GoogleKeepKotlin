@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">GoogleKeeperKotlin</string>
+    <string name="debug">debug</string>
+</resources>
