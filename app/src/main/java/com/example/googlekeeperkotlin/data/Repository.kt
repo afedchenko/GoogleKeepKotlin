@@ -5,6 +5,7 @@ import com.example.googlekeeperkotlin.data.model.Note
 object Repository {
     private val notes: List<Note>
 
+
     init {
         notes = listOf(
             Note(
