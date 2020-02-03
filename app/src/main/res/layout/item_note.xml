@@ -3,10 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginEnd="4dp"
-    android:layout_marginStart="4dp"
-    android:layout_marginTop="4dp"
-    android:layout_marginBottom="4dp"
+    android:layout_marginEnd="@dimen/item_note_layout_margin"
+    android:layout_marginStart="@dimen/item_note_layout_margin"
+    android:layout_marginTop="@dimen/item_note_layout_margin"
+    android:layout_marginBottom="@dimen/item_note_layout_margin"
     tools:backgroundTint="@android:color/holo_purple">
 
     <LinearLayout
@@ -15,21 +15,21 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/title"
+            android:id="@+id/item_note_title"
             style="@style/TextAppearance.AppCompat.Title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            tools:text="Geekbrains + Kotlin forever"/>
+            android:layout_marginEnd="@dimen/item_note_margin"
+            android:layout_marginStart="@dimen/item_note_margin"
+            android:layout_marginTop="@dimen/item_note_margin"
+            tools:text="@string/item_note_debug_note_title"/>
 
         <TextView
-            android:id="@+id/body"
+            android:id="@+id/item_note_body"
             style="@style/TextAppearance.AppCompat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            tools:text="Я Kotlin бы выучил только за то, что на нем разрабатывал Вортон!"/>
+            android:layout_margin="@dimen/item_note_margin"
+            tools:text="@string/item_note_debug_body_note"/>
     </LinearLayout>
 </androidx.cardview.widget.CardView>

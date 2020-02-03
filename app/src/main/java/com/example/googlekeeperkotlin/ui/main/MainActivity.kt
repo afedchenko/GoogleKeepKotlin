@@ -24,12 +24,10 @@ class MainActivity : AppCompatActivity() {
         adapter = MainAdapter()
         (mainRecycler as RecyclerView).adapter = adapter
 
-
         viewModel.viewState().observe(this, Observer {
             it?.let {
                 adapter.notes = it.notes
             }
         })
-
     }
 }
