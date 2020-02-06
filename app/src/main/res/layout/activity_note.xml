@@ -26,18 +26,18 @@
         android:padding="16dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <com.google.android.material.appbar.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Заголовок"
             android:textColorHint="@android:color/black">
 
-            <com.google.android.material.appbar.TextInputEditText
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/titleEt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@android:color/black"/>
-        </com.google.android.material.appbar.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <EditText
             android:id="@+id/bodyEt"
