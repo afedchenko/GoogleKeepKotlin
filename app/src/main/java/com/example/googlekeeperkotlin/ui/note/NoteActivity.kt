@@ -37,8 +37,7 @@ class NoteActivity : AppCompatActivity() {
 
         supportActionBar?.title = if (note != null) {
             SimpleDateFormat(
-                DATE_TIME_FORMAT,
-                Locale.getDefault()).format(note!!.lastChanged)
+                DATE_TIME_FORMAT, Locale.getDefault()).format(note!!.lastChanged)
         } else {
             getString(R.string.new_note_title)
         }
@@ -47,6 +46,7 @@ class NoteActivity : AppCompatActivity() {
     }
 
     private fun initView() {
+        
         if (note != null) {
             titleEt.setText(note?.title ?: "")
             bodyEt.setText(note?.note ?: "")
