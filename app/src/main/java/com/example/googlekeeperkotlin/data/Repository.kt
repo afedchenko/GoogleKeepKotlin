@@ -1,49 +1,37 @@
-package com.example.googlekeeperkotlin.data
-
-import com.example.googlekeeperkotlin.data.model.Note
+import java.util.*
 
 object Repository {
-    private val notes: List<Note>
 
-    init {
-        notes = listOf(
-            Note(
-                "Заметка 1",
-                "Kotlin очень краткий, но при этом выразительный язык",
-                0xfff06292.toInt()
-            ),
-            Note(
-                "Заметка 2",
-                "Kotlin очень краткий, но при этом выразительный язык",
-                0xff9575cd.toInt()
-            ),
-            Note(
-                "Заметка 3",
-                "Kotlin очень краткий, но при этом выразительный язык",
-                0xff64b5f6.toInt()
-            ),
-            Note(
-                "Заметка 4",
-                "Kotlin очень краткий, но при этом выразительный язык",
-                0xff4db6ac.toInt()
-            ),
-            Note(
-                "Заметка 5",
-                "Kotlin очень краткий, но при этом выразительный язык",
-                0xffb2ff59.toInt()
-            ),
-            Note(
-                "Заметка 6",
-                "Kotlin очень краткий, но при этом выразительный язык",
-                0xffffeb3b.toInt()
-            ),
-            Note(
-                "Заметка 7",
-                "Kotlin очень краткий, но при этом выразительный язык",
-                0xffff6e40.toInt()
-            )
-        )
-    }
+    val notes: MutableList<Note> = mutableListOf(
+        Note(id = UUID.randomUUID().toString(),
+            title = "Моя первая заметка",
+            note = "Kotlin очень краткий, но при этом выразительный язык",
+            color = Color.WHITE),
+        Note(id = UUID.randomUUID().toString(),
+            title = "Моя первая заметка",
+            note = "Kotlin очень краткий, но при этом выразительный язык",
+            color = Color.BLUE),
+        Note(id = UUID.randomUUID().toString(),
+            title = "Моя первая заметка",
+            note = "Kotlin очень краткий, но при этом выразительный язык",
+            color = Color.GREEN),
+        Note(id = UUID.randomUUID().toString(),
+            title = "Моя первая заметка",
+            note = "Kotlin очень краткий, но при этом выразительный язык",
+            color = Color.PINK),
+        Note(id = UUID.randomUUID().toString(),
+            title = "Моя первая заметка",
+            note = "Kotlin очень краткий, но при этом выразительный язык",
+            color = Color.RED),
+        Note(id = UUID.randomUUID().toString(),
+            title = "Моя первая заметка",
+            note = "Kotlin очень краткий, но при этом выразительный язык",
+            color = Color.YELLOW),
+        Note(id = UUID.randomUUID().toString(),
+            title = "Моя первая заметка",
+            note = "Kotlin очень краткий, но при этом выразительный язык",
+            color = Color.VIOLET)
+    )
 
     fun getNotes(): List<Note> {
         return notes
