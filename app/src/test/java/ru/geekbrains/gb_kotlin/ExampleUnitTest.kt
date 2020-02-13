@@ -1,4 +1,4 @@
-package com.example.googlekeeperkotlin
+package ru.geekbrains.gb_kotlin
 
 import org.junit.Test
 

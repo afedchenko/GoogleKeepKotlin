@@ -1,7 +1,4 @@
 <resources>
-    <string name="app_name">GoogleKeeperKotlin</string>
-    <string name="debug">debug</string>
-    <string name="item_note_debug_body_note">Я Kotlin бы выучил только за то, что на нем разрабатывал Вортон!</string>
-    <string name="item_note_debug_note_title">Geekbrains + Kotlin forever</string>
+    <string name="app_name">gb_kotlin</string>
     <string name="new_note_title">Новая заметка</string>
 </resources>
