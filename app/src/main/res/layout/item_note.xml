@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginEnd="@dimen/item_note_layout_margin"
-    android:layout_marginStart="@dimen/item_note_layout_margin"
-    android:layout_marginTop="@dimen/item_note_layout_margin"
-    android:layout_marginBottom="@dimen/item_note_layout_margin"
-    tools:backgroundTint="@android:color/holo_purple">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="4dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,21 +11,24 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/item_note_title"
-            style="@style/TextAppearance.AppCompat.Title"
-            android:layout_width="match_parent"
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/item_note_margin"
-            android:layout_marginStart="@dimen/item_note_margin"
-            android:layout_marginTop="@dimen/item_note_margin"
-            tools:text="@string/item_note_debug_note_title"/>
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            tools:text="Очень важная заметка"/>
+
 
         <TextView
-            android:id="@+id/item_note_body"
-            style="@style/TextAppearance.AppCompat"
-            android:layout_width="match_parent"
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/item_note_margin"
-            tools:text="@string/item_note_debug_body_note"/>
+            android:layout_margin="8dp"
+            tools:text="Длинный предлинный текст важной заметки"/>
+
+
+
     </LinearLayout>
+
 </androidx.cardview.widget.CardView>
